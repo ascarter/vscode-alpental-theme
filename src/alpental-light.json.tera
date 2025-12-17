@@ -1,0 +1,166 @@
+{
+  "name": "{{ meta.name }} Light",
+  "type": "light",
+  "colors": {
+    "foreground": "{{ light.text_primary }}",
+    "focusBorder": "{{ with_alpha(color=accents.info, alpha=0.4) }}",
+    "descriptionForeground": "{{ light.text_secondary }}",
+    "errorForeground": "{{ accents.error }}",
+
+    "editor.background": "{{ light.alternate }}",
+    "editor.foreground": "{{ light.text_primary }}",
+    "editor.lineHighlightBackground": "{{ light.tertiary }}",
+    "editorLineNumber.foreground": "{{ light.text_secondary }}",
+    "editorLineNumber.activeForeground": "{{ light.text_primary }}",
+    "editor.selectionBackground": "{{ with_alpha(color=accents.info, alpha=0.24) }}",
+    "editor.inactiveSelectionBackground": "{{ with_alpha(color=accents.info, alpha=0.12) }}",
+    "editor.selectionHighlightBackground": "{{ with_alpha(color=accents.info_secondary, alpha=0.18) }}",
+    "editor.wordHighlightBackground": "{{ with_alpha(color=accents.info_secondary, alpha=0.12) }}",
+    "editor.wordHighlightStrongBackground": "{{ with_alpha(color=accents.warning, alpha=0.12) }}",
+    "editorBracketMatch.background": "{{ with_alpha(color=accents.info, alpha=0.18) }}",
+    "editorBracketMatch.border": "{{ with_alpha(color=accents.info, alpha=0.2) }}",
+    "editorCursor.foreground": "{{ accents.info }}",
+    "editorWhitespace.foreground": "{{ with_alpha(color=light.text_tertiary, alpha=0.6) }}",
+    "editorIndentGuide.background": "{{ with_alpha(color=light.text_tertiary, alpha=0.35) }}",
+    "editorIndentGuide.activeBackground": "{{ light.text_secondary }}",
+    "editorGutter.background": "{{ light.alternate }}",
+    "editorGutter.addedBackground": "{{ accents.info }}",
+    "editorGutter.deletedBackground": "{{ accents.error }}",
+    "editorGutter.modifiedBackground": "{{ accents.warning }}",
+    "editorHoverWidget.background": "{{ light.secondary }}",
+    "editorHoverWidget.border": "{{ with_alpha(color=light.text_secondary, alpha=0.2) }}",
+
+    "statusBar.background": "{{ light.tertiary }}",
+    "statusBar.foreground": "{{ light.text_primary }}",
+    "statusBar.debuggingBackground": "{{ accents.warning }}",
+    "statusBar.debuggingForeground": "{{ light.text_invert_primary }}",
+
+    "titleBar.activeBackground": "{{ light.tertiary }}",
+    "titleBar.activeForeground": "{{ light.text_primary }}",
+    "titleBar.inactiveBackground": "{{ light.secondary }}",
+    "titleBar.inactiveForeground": "{{ light.text_secondary }}",
+
+    "tab.activeBackground": "{{ light.alternate }}",
+    "tab.activeForeground": "{{ light.text_primary }}",
+    "tab.inactiveBackground": "{{ with_alpha(color=light.neutral, alpha=0.2) }}",
+    "tab.inactiveForeground": "{{ light.text_secondary }}",
+    "tab.border": "{{ with_alpha(color=light.text_secondary, alpha=0.1) }}",
+
+    "sideBar.background": "{{ light.secondary }}",
+    "sideBar.foreground": "{{ light.text_primary }}",
+    "activityBar.background": "{{ light.secondary }}",
+    "activityBar.foreground": "{{ light.text_primary }}",
+    "activityBarBadge.background": "{{ accents.info }}",
+    "activityBarBadge.foreground": "{{ light.text_invert_primary }}",
+
+    "panel.background": "{{ light.secondary }}",
+    "panel.border": "{{ with_alpha(color=light.text_secondary, alpha=0.12) }}",
+
+    "badge.background": "{{ accents.info }}",
+    "badge.foreground": "{{ light.text_invert_primary }}",
+
+    "button.background": "{{ accents.info }}",
+    "button.foreground": "{{ light.text_invert_primary }}",
+    "button.hoverBackground": "{{ accents.info_secondary }}",
+
+    "dropdown.background": "{{ light.secondary }}",
+    "dropdown.foreground": "{{ light.text_primary }}",
+
+    "input.background": "{{ light.secondary }}",
+    "input.foreground": "{{ light.text_primary }}",
+    "input.placeholderForeground": "{{ light.text_disabled }}",
+    "input.border": "{{ with_alpha(color=light.text_secondary, alpha=0.12) }}",
+
+    "scrollbarSlider.background": "{{ with_alpha(color=light.text_tertiary, alpha=0.25) }}",
+    "scrollbarSlider.hoverBackground": "{{ with_alpha(color=light.text_tertiary, alpha=0.4) }}",
+    "scrollbarSlider.activeBackground": "{{ with_alpha(color=accents.info, alpha=0.45) }}",
+
+    "notificationCenterHeader.foreground": "{{ light.text_primary }}",
+    "notificationCenterHeader.background": "{{ light.secondary }}",
+
+    "list.activeSelectionBackground": "{{ with_alpha(color=accents.info, alpha=0.16) }}",
+    "list.activeSelectionForeground": "{{ light.text_primary }}",
+    "list.hoverBackground": "{{ with_alpha(color=light.tertiary, alpha=0.5) }}",
+    "list.focusBackground": "{{ with_alpha(color=accents.info, alpha=0.14) }}",
+    "list.focusForeground": "{{ light.text_primary }}",
+    "list.inactiveSelectionBackground": "{{ with_alpha(color=light.neutral, alpha=0.2) }}",
+
+    "gitDecoration.addedResourceForeground": "{{ accents.info }}",
+    "gitDecoration.modifiedResourceForeground": "{{ accents.warning }}",
+    "gitDecoration.deletedResourceForeground": "{{ accents.error }}",
+    "gitDecoration.untrackedResourceForeground": "{{ accents.info }}",
+    "gitDecoration.conflictingResourceForeground": "{{ accents.warning }}",
+    "gitDecoration.ignoredResourceForeground": "{{ light.text_disabled }}",
+
+    "editorError.foreground": "{{ accents.error }}",
+    "editorWarning.foreground": "{{ accents.warning }}",
+    "editorInfo.foreground": "{{ accents.info }}",
+
+    "diffEditor.insertedTextBackground": "{{ with_alpha(color=accents.info, alpha=0.12) }}",
+    "diffEditor.removedTextBackground": "{{ with_alpha(color=accents.error, alpha=0.12) }}",
+
+    "terminal.background": "{{ light.alternate }}",
+    "terminal.foreground": "{{ light.text_primary }}",
+    "terminalCursor.foreground": "{{ accents.info }}",
+    "terminal.ansiBlack": "{{ ansi.light.normal.black }}",
+    "terminal.ansiRed": "{{ ansi.light.normal.red }}",
+    "terminal.ansiGreen": "{{ ansi.light.normal.green }}",
+    "terminal.ansiYellow": "{{ ansi.light.normal.yellow }}",
+    "terminal.ansiBlue": "{{ ansi.light.normal.blue }}",
+    "terminal.ansiMagenta": "{{ ansi.light.normal.magenta }}",
+    "terminal.ansiCyan": "{{ ansi.light.normal.cyan }}",
+    "terminal.ansiWhite": "{{ ansi.light.normal.white }}",
+    "terminal.ansiBrightBlack": "{{ ansi.light.bright.black }}",
+    "terminal.ansiBrightRed": "{{ ansi.light.bright.red }}",
+    "terminal.ansiBrightGreen": "{{ ansi.light.bright.green }}",
+    "terminal.ansiBrightYellow": "{{ ansi.light.bright.yellow }}",
+    "terminal.ansiBrightBlue": "{{ ansi.light.bright.blue }}",
+    "terminal.ansiBrightMagenta": "{{ ansi.light.bright.magenta }}",
+    "terminal.ansiBrightCyan": "{{ ansi.light.bright.cyan }}",
+    "terminal.ansiBrightWhite": "{{ ansi.light.bright.white }}"
+  },
+  "tokenColors": [
+    {
+      "name": "Comment",
+      "scope": ["comment", "punctuation.definition.comment"],
+      "settings": {
+        "fontStyle": "italic",
+        "foreground": "{{ light.text_secondary }}"
+      }
+    },
+    {
+      "name": "Function",
+      "scope": ["entity.name.function", "support.function"],
+      "settings": {
+        "foreground": "{{ light.text_primary }}",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "Invalid",
+      "scope": ["invalid", "invalid.illegal"],
+      "settings": {
+        "foreground": "{{ light.text_invert_primary }}",
+        "background": "{{ accents.error }}"
+      }
+    }
+  ],
+  "semanticHighlighting": true,
+  "semanticTokenColors": {
+    "property": "{{ light.text_primary }}",
+    "enumMember": "{{ light.text_primary }}",
+    "variable.readonly": "{{ light.text_primary }}",
+    "parameter": "{{ light.text_primary }}",
+    "function": {
+      "foreground": "{{ light.text_primary }}",
+      "fontStyle": "bold"
+    },
+    "method": {
+      "foreground": "{{ light.text_primary }}",
+      "fontStyle": "bold"
+    },
+    "type": "{{ light.text_primary }}",
+    "class": "{{ light.text_primary }}",
+    "interface": "{{ light.text_primary }}"
+  }
+}

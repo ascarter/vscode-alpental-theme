@@ -1,0 +1,26 @@
+{
+  "name": "alpental-vscode-theme",
+  "displayName": "Alpental Theme",
+  "description": "Minimal theme focused on typography",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.107.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Alpental Light Theme",
+        "uiTheme": "vs",
+        "path": "./themes/alpental-light.json"
+      },
+      {
+        "label": "Alpental Dark Theme",
+        "uiTheme": "vs-dark",
+        "path": "./themes/alpental-dark.json"
+      }
+    ]
+  }
+}
