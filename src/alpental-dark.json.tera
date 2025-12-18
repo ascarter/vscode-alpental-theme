@@ -132,6 +132,115 @@
       "name": "Function",
       "scope": ["entity.name.function", "support.function"],
       "settings": {
+        "foreground": "{{ dark.text_primary }}"
+      }
+    },
+    {
+      "name": "Constant",
+      "scope": ["constant", "constant.other"],
+      "settings": {
+        "foreground": "{{ dark.text_primary }}",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "Embedded",
+      "scope": ["source.embedded", "punctuation.section.embedded"],
+      "settings": {
+        "foreground": "{{ dark.text_secondary }}",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "Preprocessor",
+      "scope": ["meta.preprocessor", "keyword.control.import", "keyword.control.export"],
+      "settings": {
+        "foreground": "{{ dark.text_secondary }}",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "Emphasis",
+      "scope": ["markup.italic"],
+      "settings": {
+        "foreground": "{{ dark.text_primary }}",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "Strong Emphasis",
+      "scope": ["markup.bold"],
+      "settings": {
+        "foreground": "{{ dark.text_primary }}",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "Link Text",
+      "scope": ["markup.underline.link", "string.other.link"],
+      "settings": {
+        "foreground": "{{ accents.info }}"
+      }
+    },
+    {
+      "name": "Link URI",
+      "scope": ["meta.link"],
+      "settings": {
+        "foreground": "{{ accents.info }}"
+      }
+    },
+    {
+      "name": "Namespace",
+      "scope": ["entity.name.namespace"],
+      "settings": {
+        "foreground": "{{ dark.text_primary }}",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "List Marker",
+      "scope": ["punctuation.definition.list.begin.markdown", "punctuation.definition.list.markdown"],
+      "settings": {
+        "foreground": "{{ dark.text_primary }}",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "Regex String",
+      "scope": ["string.regexp"],
+      "settings": {
+        "foreground": "{{ dark.text_primary }}",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "Special String",
+      "scope": ["string.other.special"],
+      "settings": {
+        "foreground": "{{ dark.text_primary }}",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "Tag",
+      "scope": ["entity.name.tag", "meta.tag", "support.class.component"],
+      "settings": {
+        "foreground": "{{ accents.info }}",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "Literal Text",
+      "scope": ["markup.inline.raw", "markup.fenced_code.block"],
+      "settings": {
+        "foreground": "{{ dark.text_primary }}",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "Title",
+      "scope": ["markup.heading", "entity.name.section"],
+      "settings": {
         "foreground": "{{ dark.text_primary }}",
         "fontStyle": "bold"
       }
@@ -152,12 +261,10 @@
     "variable.readonly": "{{ dark.text_primary }}",
     "parameter": "{{ dark.text_primary }}",
     "function": {
-      "foreground": "{{ dark.text_primary }}",
-      "fontStyle": "bold"
+      "foreground": "{{ dark.text_primary }}"
     },
     "method": {
-      "foreground": "{{ dark.text_primary }}",
-      "fontStyle": "bold"
+      "foreground": "{{ dark.text_primary }}"
     },
     "type": "{{ dark.text_primary }}",
     "class": "{{ dark.text_primary }}",

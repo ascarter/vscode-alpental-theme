@@ -2,7 +2,16 @@
   "name": "alpental-vscode-theme",
   "displayName": "Alpental Theme",
   "description": "Minimal theme focused on typography",
+  "publisher": "ascarter",
   "version": "0.0.1",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ascarter/vscode-alpental-theme"
+  },
+  "bugs": {
+    "url": "https://github.com/ascarter/vscode-alpental-theme/issues"
+  },
   "engines": {
     "vscode": "^1.107.0"
   },
@@ -22,5 +31,12 @@
         "path": "./themes/alpental-dark.json"
       }
     ]
+  },
+  "devDependencies": {
+    "@vscode/vsce": "^3.0.0"
+  },
+  "scripts": {
+    "package": "vsce package",
+    "publish": "vsce publish"
   }
 }

@@ -132,6 +132,115 @@
       "name": "Function",
       "scope": ["entity.name.function", "support.function"],
       "settings": {
+        "foreground": "#FFFFFF"
+      }
+    },
+    {
+      "name": "Constant",
+      "scope": ["constant", "constant.other"],
+      "settings": {
+        "foreground": "#FFFFFF",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "Embedded",
+      "scope": ["source.embedded", "punctuation.section.embedded"],
+      "settings": {
+        "foreground": "#CBCBCB",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "Preprocessor",
+      "scope": ["meta.preprocessor", "keyword.control.import", "keyword.control.export"],
+      "settings": {
+        "foreground": "#CBCBCB",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "Emphasis",
+      "scope": ["markup.italic"],
+      "settings": {
+        "foreground": "#FFFFFF",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "Strong Emphasis",
+      "scope": ["markup.bold"],
+      "settings": {
+        "foreground": "#FFFFFF",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "Link Text",
+      "scope": ["markup.underline.link", "string.other.link"],
+      "settings": {
+        "foreground": "#4294FF"
+      }
+    },
+    {
+      "name": "Link URI",
+      "scope": ["meta.link"],
+      "settings": {
+        "foreground": "#4294FF"
+      }
+    },
+    {
+      "name": "Namespace",
+      "scope": ["entity.name.namespace"],
+      "settings": {
+        "foreground": "#FFFFFF",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "List Marker",
+      "scope": ["punctuation.definition.list.begin.markdown", "punctuation.definition.list.markdown"],
+      "settings": {
+        "foreground": "#FFFFFF",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "Regex String",
+      "scope": ["string.regexp"],
+      "settings": {
+        "foreground": "#FFFFFF",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "Special String",
+      "scope": ["string.other.special"],
+      "settings": {
+        "foreground": "#FFFFFF",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "Tag",
+      "scope": ["entity.name.tag", "meta.tag", "support.class.component"],
+      "settings": {
+        "foreground": "#4294FF",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "name": "Literal Text",
+      "scope": ["markup.inline.raw", "markup.fenced_code.block"],
+      "settings": {
+        "foreground": "#FFFFFF",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "Title",
+      "scope": ["markup.heading", "entity.name.section"],
+      "settings": {
         "foreground": "#FFFFFF",
         "fontStyle": "bold"
       }
@@ -152,12 +261,10 @@
     "variable.readonly": "#FFFFFF",
     "parameter": "#FFFFFF",
     "function": {
-      "foreground": "#FFFFFF",
-      "fontStyle": "bold"
+      "foreground": "#FFFFFF"
     },
     "method": {
-      "foreground": "#FFFFFF",
-      "fontStyle": "bold"
+      "foreground": "#FFFFFF"
     },
     "type": "#FFFFFF",
     "class": "#FFFFFF",
