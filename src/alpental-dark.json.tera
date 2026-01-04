@@ -7,6 +7,14 @@
     "descriptionForeground": "{{ dark.text_secondary }}",
     "errorForeground": "{{ accents.error }}",
 
+    "textBlockQuote.background": "{{ dark.tertiary }}",
+    "textCodeBlock.background": "{{ dark.tertiary }}",
+    "textLink.foreground": "{{ accents.info }}",
+    "textLink.activeForeground": "{{ accents.info }}",
+    "textPreformat.foreground": "{{ dark.text_secondary }}",
+    "textPreformat.background": "{{ dark.tertiary }}",
+    "textSeparator.foreground": "{{ dark.tertiary }}",
+
     "editor.background": "{{ dark.alternate }}",
     "editor.foreground": "{{ dark.text_primary }}",
     "editor.lineHighlightBackground": "{{ with_alpha(color=dark.tertiary, alpha=0.8) }}",
@@ -125,7 +133,7 @@
       "scope": ["comment", "punctuation.definition.comment"],
       "settings": {
         "fontStyle": "italic",
-        "foreground": "{{ dark.text_secondary }}"
+        "foreground": "{{ dark.text_tertiary }}"
       }
     },
     {
@@ -139,8 +147,7 @@
       "name": "Constant",
       "scope": ["constant", "constant.other"],
       "settings": {
-        "foreground": "{{ dark.text_primary }}",
-        "fontStyle": "italic"
+        "foreground": "{{ dark.text_primary }}"
       }
     },
     {
@@ -190,14 +197,6 @@
       }
     },
     {
-      "name": "Namespace",
-      "scope": ["entity.name.namespace"],
-      "settings": {
-        "foreground": "{{ dark.text_primary }}",
-        "fontStyle": "bold"
-      }
-    },
-    {
       "name": "List Marker",
       "scope": ["punctuation.definition.list.begin.markdown", "punctuation.definition.list.markdown"],
       "settings": {
@@ -209,16 +208,7 @@
       "name": "Regex String",
       "scope": ["string.regexp"],
       "settings": {
-        "foreground": "{{ dark.text_primary }}",
-        "fontStyle": "bold"
-      }
-    },
-    {
-      "name": "Special String",
-      "scope": ["string.other.special"],
-      "settings": {
-        "foreground": "{{ dark.text_primary }}",
-        "fontStyle": "bold"
+        "foreground": "{{ dark.text_primary }}"
       }
     },
     {
@@ -231,9 +221,9 @@
     },
     {
       "name": "Literal Text",
-      "scope": ["markup.inline.raw", "markup.fenced_code.block"],
+      "scope": ["markup.inline.raw", "markup.fenced_code.block", "markup.quote", "markup.raw"],
       "settings": {
-        "foreground": "{{ dark.text_primary }}",
+        "foreground": "{{ dark.text_secondary }}",
         "fontStyle": "italic"
       }
     },
@@ -256,18 +246,13 @@
   ],
   "semanticHighlighting": true,
   "semanticTokenColors": {
-    "property": "{{ dark.text_primary }}",
-    "enumMember": "{{ dark.text_primary }}",
-    "variable.readonly": "{{ dark.text_primary }}",
-    "parameter": "{{ dark.text_primary }}",
-    "function": {
-      "foreground": "{{ dark.text_primary }}"
+    "decorator": {
+      "foreground": "{{ light.text_secondary }}",
+      "italic": true
     },
-    "method": {
-      "foreground": "{{ dark.text_primary }}"
-    },
-    "type": "{{ dark.text_primary }}",
-    "class": "{{ dark.text_primary }}",
-    "interface": "{{ dark.text_primary }}"
+    "label": {
+      "foreground": "{{ dark.text_primary }}",
+      "bold": true
+    }
   }
 }

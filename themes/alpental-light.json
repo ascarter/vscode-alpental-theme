@@ -7,6 +7,14 @@
     "descriptionForeground": "#494949",
     "errorForeground": "#F05A4F",
 
+    "textBlockQuote.background": "#ECECEC",
+    "textCodeBlock.background": "#ECECEC",
+    "textLink.foreground": "#4294FF",
+    "textLink.activeForeground": "#005E7D",
+    "textPreformat.foreground": "#494949",
+    "textPreformat.background": "#ECECEC",
+    "textSeparator.foreground": "#ECECEC",
+
     "editor.background": "#FAFAFA",
     "editor.foreground": "#000000",
     "editor.lineHighlightBackground": "#ECECEC",
@@ -125,7 +133,7 @@
       "scope": ["comment", "punctuation.definition.comment"],
       "settings": {
         "fontStyle": "italic",
-        "foreground": "#494949"
+        "foreground": "#636363"
       }
     },
     {
@@ -139,8 +147,7 @@
       "name": "Constant",
       "scope": ["constant", "constant.other"],
       "settings": {
-        "foreground": "#000000",
-        "fontStyle": "italic"
+        "foreground": "#000000"
       }
     },
     {
@@ -190,14 +197,6 @@
       }
     },
     {
-      "name": "Namespace",
-      "scope": ["entity.name.namespace"],
-      "settings": {
-        "foreground": "#000000",
-        "fontStyle": "bold"
-      }
-    },
-    {
       "name": "List Marker",
       "scope": ["punctuation.definition.list.begin.markdown", "punctuation.definition.list.markdown"],
       "settings": {
@@ -209,16 +208,7 @@
       "name": "Regex String",
       "scope": ["string.regexp"],
       "settings": {
-        "foreground": "#000000",
-        "fontStyle": "bold"
-      }
-    },
-    {
-      "name": "Special String",
-      "scope": ["string.other.special"],
-      "settings": {
-        "foreground": "#000000",
-        "fontStyle": "bold"
+        "foreground": "#000000"
       }
     },
     {
@@ -231,9 +221,9 @@
     },
     {
       "name": "Literal Text",
-      "scope": ["markup.inline.raw", "markup.fenced_code.block"],
+      "scope": ["markup.inline.raw", "markup.fenced_code.block", "markup.quote", "markup.raw"],
       "settings": {
-        "foreground": "#000000",
+        "foreground": "#494949",
         "fontStyle": "italic"
       }
     },
@@ -256,18 +246,13 @@
   ],
   "semanticHighlighting": true,
   "semanticTokenColors": {
-    "property": "#000000",
-    "enumMember": "#000000",
-    "variable.readonly": "#000000",
-    "parameter": "#000000",
-    "function": {
-      "foreground": "#000000"
+    "decorator": {
+      "foreground": "#494949",
+      "italic": true
     },
-    "method": {
-      "foreground": "#000000"
-    },
-    "type": "#000000",
-    "class": "#000000",
-    "interface": "#000000"
+    "label": {
+      "foreground": "#000000",
+      "bold": true
+    }
   }
 }

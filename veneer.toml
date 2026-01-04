@@ -26,7 +26,7 @@ neutral   = "#CBCBCB"
 
 text_primary          = "#FFFFFF"
 text_secondary        = "#CBCBCB"
-text_tertiary         = "#494949"
+text_tertiary         = "#7A7A7A"
 text_invert_primary   = "#000000"
 text_invert_secondary = "#151515"
 text_disabled         = "#8E8E8E"

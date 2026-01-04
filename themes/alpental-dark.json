@@ -7,6 +7,14 @@
     "descriptionForeground": "#CBCBCB",
     "errorForeground": "#F05A4F",
 
+    "textBlockQuote.background": "#494949",
+    "textCodeBlock.background": "#494949",
+    "textLink.foreground": "#4294FF",
+    "textLink.activeForeground": "#4294FF",
+    "textPreformat.foreground": "#CBCBCB",
+    "textPreformat.background": "#494949",
+    "textSeparator.foreground": "#494949",
+
     "editor.background": "#151515",
     "editor.foreground": "#FFFFFF",
     "editor.lineHighlightBackground": "#494949CC",
@@ -20,8 +28,8 @@
     "editorBracketMatch.background": "#4294FF38",
     "editorBracketMatch.border": "#4294FF3D",
     "editorCursor.foreground": "#4294FF",
-    "editorWhitespace.foreground": "#49494999",
-    "editorIndentGuide.background": "#49494959",
+    "editorWhitespace.foreground": "#7A7A7A99",
+    "editorIndentGuide.background": "#7A7A7A59",
     "editorIndentGuide.activeBackground": "#CBCBCB",
     "editorGutter.background": "#151515",
     "editorGutter.addedBackground": "#4294FF",
@@ -71,8 +79,8 @@
     "input.placeholderForeground": "#8E8E8E",
     "input.border": "#CBCBCB2E",
 
-    "scrollbarSlider.background": "#49494947",
-    "scrollbarSlider.hoverBackground": "#4949496B",
+    "scrollbarSlider.background": "#7A7A7A47",
+    "scrollbarSlider.hoverBackground": "#7A7A7A6B",
     "scrollbarSlider.activeBackground": "#4294FF8C",
 
     "notificationCenterHeader.foreground": "#FFFFFF",
@@ -125,7 +133,7 @@
       "scope": ["comment", "punctuation.definition.comment"],
       "settings": {
         "fontStyle": "italic",
-        "foreground": "#CBCBCB"
+        "foreground": "#7A7A7A"
       }
     },
     {
@@ -139,8 +147,7 @@
       "name": "Constant",
       "scope": ["constant", "constant.other"],
       "settings": {
-        "foreground": "#FFFFFF",
-        "fontStyle": "italic"
+        "foreground": "#FFFFFF"
       }
     },
     {
@@ -190,14 +197,6 @@
       }
     },
     {
-      "name": "Namespace",
-      "scope": ["entity.name.namespace"],
-      "settings": {
-        "foreground": "#FFFFFF",
-        "fontStyle": "bold"
-      }
-    },
-    {
       "name": "List Marker",
       "scope": ["punctuation.definition.list.begin.markdown", "punctuation.definition.list.markdown"],
       "settings": {
@@ -209,16 +208,7 @@
       "name": "Regex String",
       "scope": ["string.regexp"],
       "settings": {
-        "foreground": "#FFFFFF",
-        "fontStyle": "bold"
-      }
-    },
-    {
-      "name": "Special String",
-      "scope": ["string.other.special"],
-      "settings": {
-        "foreground": "#FFFFFF",
-        "fontStyle": "bold"
+        "foreground": "#FFFFFF"
       }
     },
     {
@@ -231,9 +221,9 @@
     },
     {
       "name": "Literal Text",
-      "scope": ["markup.inline.raw", "markup.fenced_code.block"],
+      "scope": ["markup.inline.raw", "markup.fenced_code.block", "markup.quote", "markup.raw"],
       "settings": {
-        "foreground": "#FFFFFF",
+        "foreground": "#CBCBCB",
         "fontStyle": "italic"
       }
     },
@@ -256,18 +246,13 @@
   ],
   "semanticHighlighting": true,
   "semanticTokenColors": {
-    "property": "#FFFFFF",
-    "enumMember": "#FFFFFF",
-    "variable.readonly": "#FFFFFF",
-    "parameter": "#FFFFFF",
-    "function": {
-      "foreground": "#FFFFFF"
+    "decorator": {
+      "foreground": "#494949",
+      "italic": true
     },
-    "method": {
-      "foreground": "#FFFFFF"
-    },
-    "type": "#FFFFFF",
-    "class": "#FFFFFF",
-    "interface": "#FFFFFF"
+    "label": {
+      "foreground": "#FFFFFF",
+      "bold": true
+    }
   }
 }

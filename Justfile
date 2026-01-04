@@ -8,6 +8,8 @@ vsix: build
     npm run package
 
 install: vsix
+    #!/usr/bin/env bash
+    set -euo pipefail
     VSIX=$(ls -t alpental-vscode-theme-*.vsix 2>/dev/null | head -n 1)
     [ -n "$VSIX" ] || { echo "No .vsix found in repo root (did packaging succeed?)"; exit 1; }
     code --install-extension "$VSIX"
